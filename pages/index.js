@@ -1,10 +1,12 @@
+//components
+import HeroSection from "../components/home/hero-section"
 import Header from "../layouts/header"
 
 export default function Home() {
   return (
     <div>
-      <Header />
-      <div className="bg-primary w-full h-screen"></div>
+      <Header pageName={"Home"} />
+      <HeroSection />
     </div>
   )
 }

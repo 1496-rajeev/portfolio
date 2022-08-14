@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import Button from '../../components/buttons/primary';
 import Link from 'next/link';
 
-export default function Header() {
+export default function Header({ pageName }) {
   const Links = [
-    { name: "HOME", link: "/" },
-    { name: "SERVICE", link: "/" },
-    { name: "ABOUT", link: "/" },
-    { name: "BLOG'S", link: "/" },
-    { name: "CONTACT", link: "/" },
+    { name: "Home", link: "/" },
+    { name: "Products", link: "/product" },
+    { name: "Work", link: "/work" },
+    { name: "Contact", link: "/contact" },
   ];
   const [open, setOpen] = useState(false);
 
@@ -17,12 +16,10 @@ export default function Header() {
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
         <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800'>
-          <span className='text-3xl text-primary mr-1 pt-2'>
+          <span href="/" className='text-3xl text-primary mr-1 pt-2'>
             {"Rajeev"}
           </span>
-
         </div>
-
         <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
           {open ? <div>X</div> : <div>=</div>}
         </div>
@@ -31,7 +28,9 @@ export default function Header() {
           {
             Links.map((link) => (
               <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-                <Link href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</Link>
+                <Link href={link.link} >
+                  <p className={pageName === link.name ? "text-primary" : ' hover:text-gray-400 duration-500 cursor-pointer'}>{link.name}</p>
+                </Link>
               </li>
             ))
           }
