@@ -8,6 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      //fonts
+      fontFamily: {
+        Poppins: ['Poppins', 'sans-serif'],
+      },
+      //colors
       colors: colors
     },
     plugins: [],

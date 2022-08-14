@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <div>
       <Header pageName={"Home"} />
-      <HeroSection />
+      <div className="px-[16px]">
+        <HeroSection />
+      </div>
     </div>
   )
 }
