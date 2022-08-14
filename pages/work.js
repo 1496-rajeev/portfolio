@@ -8,7 +8,9 @@ export default function Work() {
   return (
     <div>
       <Header pageName={"Work"} />
-      <HeroSection />
+      <div className="px-[16px]">
+        <HeroSection />
+      </div>
     </div>
   )
 }

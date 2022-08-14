@@ -8,7 +8,9 @@ export default function Contact() {
   return (
     <div>
       <Header pageName={"Contact"} />
-      <HeroSection />
+      <div className="px-[16px]">
+        <HeroSection />
+      </div>
     </div>
   )
 }

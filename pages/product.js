@@ -8,7 +8,9 @@ export default function Product() {
   return (
     <div>
       <Header pageName={"Products"} />
-      <HeroSection />
+      <div className="px-[16px]">
+        <HeroSection />
+      </div>
     </div>
   )
 }
