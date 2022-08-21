@@ -1,15 +1,15 @@
 import React from 'react'
 
 //components
-import HeroSection from "../components/home/hero-section"
+import Projects from '../components/work/project'
 import Header from '../layouts/header'
 
 export default function Work() {
   return (
     <div>
       <Header pageName={"Work"} />
-      <div className="px-[16px]">
-        <HeroSection />
+      <div className="px-[16px] flex flex-col justify-center items-center w-full h-screen">
+        <Projects />
       </div>
     </div>
   )

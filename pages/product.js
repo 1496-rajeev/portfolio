@@ -1,15 +1,15 @@
 import React from 'react'
+import { heading } from '../assets/typography'
 
 //components
-import HeroSection from "../components/home/hero-section"
 import Header from '../layouts/header'
 
 export default function Product() {
   return (
     <div>
       <Header pageName={"Products"} />
-      <div className="px-[16px]">
-        <HeroSection />
+      <div className="px-[16px] flex flex-col justify-center items-center w-full h-screen">
+        <p className={`${heading}`}>Coming Soon 😉</p>
       </div>
     </div>
   )

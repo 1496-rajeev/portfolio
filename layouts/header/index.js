@@ -12,7 +12,7 @@ export default function Header({ pageName }) {
     { name: "Home", link: "/" },
     { name: "Products", link: "/product" },
     { name: "Work", link: "/work" },
-    { name: "Contact", link: "/contact" },
+    // { name: "Contact", link: "/contact" },
   ];
   const [open, setOpen] = useState(false);
 
