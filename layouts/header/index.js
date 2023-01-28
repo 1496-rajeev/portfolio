@@ -39,7 +39,7 @@ export default function Header({ pageName }) {
               </li>
             ))
           }
-          <PrimaryButton label={"Call Now"} handleClick={handleCall} />
+          <PrimaryButton label={"Contact me"} handleClick={handleCall} />
         </ul>
       </div>
     </div>

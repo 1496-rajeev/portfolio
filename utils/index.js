@@ -1,5 +1,5 @@
 function handleCall() {
-  window.open("tel:+1800229933");
+  window.open("mailto:kudrum.official@gmail.com");
 }
 
 export {
