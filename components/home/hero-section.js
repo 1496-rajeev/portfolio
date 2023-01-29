@@ -64,7 +64,7 @@ export default function HeroSection() {
                   <div className="w-3 h-3 border-2 border-white rounded-full"></div>
                 </div>
               </div>
-              <Image src={HeroImage} alt='img' />
+              <Image src={HeroImage} alt='img' priority={true} />
             </div>
           </div>
         </div>

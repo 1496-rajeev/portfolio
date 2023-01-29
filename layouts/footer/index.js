@@ -4,8 +4,8 @@ import React from 'react'
 export const Footer = () => {
   return (
     <footer className="p-4 bg-white sm:p-6 dark:bg-gray-900 px-[80px]">
-      <div className="sm:flex sm:items-center sm:justify-between">
-        <div className='cursor-pointer flex justify-center'>
+      <div className="flex flex-col md:flex-row xl:flex-row md:justify-between xl:justify-between justify-center items-center w-full">
+        <div className='cursor-pointer flex justify-center items-center mb-[20px] md:mb-0 xl:mb-0'>
           <Link href={'/'} >
             <svg className="w-4 h-4 ml-1 rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#fff"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
           </Link>
