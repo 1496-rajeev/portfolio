@@ -1,7 +1,7 @@
 {
   "homepage": "https://1496-rajeev.github.io/portfolio/",
   "name": "portfolio",
-  "private": false,
+  "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
