@@ -1,8 +1,7 @@
 import { Flex, Text } from "@chakra-ui/react";
 import { ABOUT_PATH, HOME_PATH } from "../../constants";
 import { useNavigate } from "react-router-dom";
-import { useContext, useState } from "react";
-import { AppContext } from "../../store";
+import { useAppContext } from "../../store";
 
 interface IMenu {
   path: string;
@@ -11,7 +10,7 @@ interface IMenu {
 
 export default function Header() {
   const navigate = useNavigate();
-  const path = useContext(AppContext);
+  const { value, setValue } = useAppContext();
 
   const menu: IMenu[] = [
     { path: HOME_PATH, label: "Home" },
@@ -26,6 +25,7 @@ export default function Header() {
       paddingX={10}
       paddingY={3}
       rounded={"5rem"}
+      className="shadow-lg"
     >
       {menu.map((item, index) => {
         return (
@@ -33,11 +33,11 @@ export default function Header() {
             key={index}
             onClick={() => {
               navigate(item.path);
+              setValue(item.path);
             }}
             cursor={"pointer"}
-            className="hover:text-teal-500 hover:font-medium"
             fontSize={"sm"}
-            color={path === item.path ? "teal.400" : "black"}
+            color={value === item.path ? "teal.400" : "black"}
           >
             {item.label}
           </Text>

@@ -10,11 +10,11 @@ function AboutPage() {
       width={"100%"}
       flexDir={"column"}
     >
-      <ProfileIcon />
-      <Box marginY={"1rem"} width={"fit-content"}>
+      <Box marginY={"1rem"} width={"fit-content"} position={"fixed"} top={1}>
         <Header />
       </Box>
-      <Box>
+      <ProfileIcon />
+      <Box marginTop={{ base: "40%", sm: "30%", md: "20%", lg: "15%" }}>
         <Text>About me</Text>
       </Box>
     </Flex>

@@ -1,17 +1,16 @@
-import { createContext, useReducer } from "react";
-import { HOME_PATH } from "../constants";
+import { createContext, useContext } from "react";
 
-export const AppContext = createContext<string>(HOME_PATH);
+interface AppContextType {
+  value: string;
+  setValue: React.Dispatch<React.SetStateAction<string>>;
+}
 
-// const AppReducer = (state: any, action: any) => {
-//   return window.structuredClone({
-//     ...state,
-//     path: action.payload,
-//   });
-// };
+export const AppContext = createContext<AppContextType | undefined>(undefined);
 
-// const [path, dispatch] = useReducer(AppReducer, {
-//   path: HOME_PATH,
-// });
-
-// export const value = { path, dispatch };
+export const useAppContext = () => {
+  const context = useContext(AppContext);
+  if (!context) {
+    throw new Error("useAppContext must be used within an AppContextProvider");
+  }
+  return context;
+};
