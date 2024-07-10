@@ -21,11 +21,10 @@ export default function Header() {
       backgroundColor={"white"}
       justifyContent={"center"}
       gap={5}
-      boxShadow={"base"}
       paddingX={10}
       paddingY={3}
       rounded={"5rem"}
-      className="shadow-lg"
+      className="shadow-xl border border-gray-100"
     >
       {menu.map((item, index) => {
         return (
