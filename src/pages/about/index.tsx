@@ -20,11 +20,12 @@ function AboutPage() {
         <Grid
           overflow={"scroll"}
           gridTemplateColumns={{ sm: "1fr", md: "1fr", lg: "1fr 1fr" }}
-          marginTop={{ base: "40%", sm: "30%", md: "20%", lg: "15%" }}
+          marginTop={{ base: "30%", sm: "20%", md: "20%", lg: "15%" }}
           paddingX={{ base: "20px", sm: "20px", md: "80px", lg: "100px" }}
           gap={10}
           justifyContent={"center"}
           alignItems={"center"}
+          marginBottom={{ base: "30%", sm: "20%", md: "20%", lg: "15%" }}
         >
           <Box>
             <Text color={"teal.500"} fontWeight={"bold"}>
