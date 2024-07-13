@@ -137,7 +137,7 @@ export default function Footer() {
         </button>
       </Flex>
       <Flex justifyContent={"center"} marginY={4}>
-        <Text>Made with ❤️ in India</Text>
+        <Text>Developed with ❤️ in India</Text>
       </Flex>
     </Box>
   );
