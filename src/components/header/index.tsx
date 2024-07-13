@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Divider, Flex, Text } from "@chakra-ui/react";
 import { ABOUT_PATH, HOME_PATH } from "../../constants";
 import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../../store";
@@ -39,6 +39,13 @@ export default function Header() {
             color={value === item.path ? "teal.400" : "black"}
           >
             {item.label}
+            {value === item.path ? (
+              <Divider
+                borderBottomColor={"teal.400"}
+                width={"80%"}
+                borderBottomWidth="2px"
+              />
+            ) : null}
           </Text>
         );
       })}
